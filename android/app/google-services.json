@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "130766279675",
+    "project_id": "sheydoc-app",
+    "storage_bucket": "sheydoc-app.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:130766279675:android:30625e8111f7eb255f315e",
+        "android_client_info": {
+          "package_name": "com.example.sheydoc_app"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCT4rJeHz3rHKeqEotr0HF2Qfpy6AVkAeI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:130766279675:android:dc0b52679710e98b5f315e",
+        "android_client_info": {
+          "package_name": "com.sheydoc.app"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCT4rJeHz3rHKeqEotr0HF2Qfpy6AVkAeI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
