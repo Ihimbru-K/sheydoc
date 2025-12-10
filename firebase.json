@@ -1,1 +1,41 @@
-{"flutter":{"platforms":{"android":{"default":{"projectId":"sheydoc-app","appId":"1:130766279675:android:30625e8111f7eb255f315e","fileOutput":"android/app/google-services.json"}},"dart":{"lib/firebase_options.dart":{"projectId":"sheydoc-app","configurations":{"android":"1:130766279675:android:30625e8111f7eb255f315e","ios":"1:130766279675:ios:ef9669953b0c62665f315e","web":"1:130766279675:web:16b31da753c40beb5f315e"}}}}}}
+{
+  "flutter": {
+    "platforms": {
+      "android": {
+        "default": {
+          "projectId": "sheydoc-app",
+          "appId": "1:130766279675:android:30625e8111f7eb255f315e",
+          "fileOutput": "android/app/google-services.json"
+        }
+      },
+      "dart": {
+        "lib/firebase_options.dart": {
+          "projectId": "sheydoc-app",
+          "configurations": {
+            "android": "1:130766279675:android:30625e8111f7eb255f315e",
+            "ios": "1:130766279675:ios:ef9669953b0c62665f315e",
+            "web": "1:130766279675:web:16b31da753c40beb5f315e"
+          }
+        }
+      }
+    }
+  },
+  "functions": [
+    {
+      "source": "functions",
+      "codebase": "default",
+      "ignore": [
+        "node_modules",
+        ".git",
+        "firebase-debug.log",
+        "firebase-debug.*.log",
+        "*.local"
+      ],
+      "predeploy": []
+    }
+  ],
+  "firestore": {
+    "rules": "firestore.rules",
+    "indexes": "firestore.indexes.json"
+  }
+}

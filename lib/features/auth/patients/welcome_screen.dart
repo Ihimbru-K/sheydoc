@@ -32,18 +32,15 @@ class WelcomeScreen extends StatelessWidget {
 
               SizedBox(height: 22.h),
 
-              // Logo with SheyDoc text
-
-                  // Circular logo placeholder (replace with your actual logo)
                   Image.asset(
-                    'assets/images/logos/logo.png', // Replace with your asset path
+                    'assets/images/logos/logo.png',
                     height: 200,
                     width: 200,),
 
 
 
 
-              // Sign up with phone number
+
               _buildSignUpButton(
                 icon: Icons.phone_android_outlined,
                 text: '    Sign up with phone number',

@@ -22,7 +22,7 @@ class WelcomeScreen extends StatelessWidget {
             children: [
               SizedBox(height: 80.h),
 
-              // Welcome text
+
               Text(
                 'Welcome to',
                 style: TextStyle(
@@ -34,7 +34,6 @@ class WelcomeScreen extends StatelessWidget {
 
               SizedBox(height: 22.h),
 
-              // Logo
               Image.asset(
                 'assets/images/logos/logo.png',
                 height: 200.h,
