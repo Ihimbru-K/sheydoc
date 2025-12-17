@@ -59,7 +59,7 @@
 //   }
 // }
 //
-//
+
 
 
 
@@ -143,6 +143,7 @@ class MyApp extends StatelessWidget {
             '/notifications': (context) => const NotificationsScreen(),
             '/doctor/messages': (context) => const DoctorMessagesScreen(),
             '/doctor/video-patients': (context) => const DoctorVideoPatientsScreen(),
+           // '/patient/messages': (context) => const PatientMessagesScreen(),
           },
 
           // Dynamic route for chat (requires arguments)
