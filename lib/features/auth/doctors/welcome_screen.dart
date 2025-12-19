@@ -67,7 +67,7 @@ class WelcomeScreen extends StatelessWidget {
                       'or',
                       style: TextStyle(
                         color: Colors.grey[600],
-                        fontSize: 14.sp,
+                        fontSize: 15.sp,
                       ),
                     ),
                   ),

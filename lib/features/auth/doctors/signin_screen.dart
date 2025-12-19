@@ -222,7 +222,7 @@ class _SignInDocScreenState extends State<SignInDocScreen> {
                           ),
                         );
                       },
-                      child: Text(
+                      child: const Text(
                         "Register here",
                         style: TextStyle(
                           color: AppColors.textBlue,

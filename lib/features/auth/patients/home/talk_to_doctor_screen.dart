@@ -4,8 +4,8 @@ import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 
-import '../../../core/constants/app_colors.dart';
-import '../../../services/auth_service.dart';
+import '../../../../core/constants/app_colors.dart';
+import '../../../../services/auth_service.dart';
 
 class TalkToDoctorScreen extends StatefulWidget {
   @override

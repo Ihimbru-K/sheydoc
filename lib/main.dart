@@ -107,7 +107,8 @@ import 'features/doctor/home/notification_screen.dart';
 import 'features/doctor/messages/doctor_messages_screen.dart';
 import 'features/doctor/messages/chat_screen.dart';
 import 'features/doctor/video/doctor_video_patients_screen.dart';
-import 'features/onboarding/splash_screen.dart';
+
+import 'features/shared/onboarding/splash_screen.dart';
 import 'firebase_options.dart';
 
 void main() async {

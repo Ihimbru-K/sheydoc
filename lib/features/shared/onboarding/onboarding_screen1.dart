@@ -1,8 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
-import '../../core/constants/app_colors.dart';
-import '../../shared/widgets/custom_button.dart';
+
+import '../../../core/constants/app_colors.dart';
+import '../../../shared/widgets/custom_button.dart';
 import 'onboarding_screen2.dart';
 
 class OnboardingScreen1 extends StatelessWidget {

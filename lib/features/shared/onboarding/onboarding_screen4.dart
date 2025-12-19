@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-import 'package:sheydoc_app/features/onboarding/role_selection_screen.dart';
+import 'package:sheydoc_app/features/shared/onboarding/role_selection_screen.dart';
+
 
 
 class OnboardingScreen4 extends StatelessWidget {

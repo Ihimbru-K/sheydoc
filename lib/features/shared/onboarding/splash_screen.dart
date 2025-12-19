@@ -5,7 +5,8 @@ import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:sheydoc_app/features/doctor/home/home_screen.dart';
 import 'package:sheydoc_app/features/auth/doctors/approved_screen.dart';
 
-import '../auth/patients/home/home_screen.dart';
+
+import '../../auth/patients/home/home_screen.dart';
 import 'onboarding_screen1.dart';
 import 'role_selection_screen.dart';
 
