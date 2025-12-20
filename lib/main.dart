@@ -99,6 +99,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:firebase_core/firebase_core.dart';
+import 'package:sheydoc_app/features/shared/onboarding/role_selection_screen.dart';
 
 // Import screens
 import 'features/auth/doctors/welcome_screen.dart';
@@ -140,6 +141,7 @@ class MyApp extends StatelessWidget {
           // Named routes
           routes: {
             // '/welcome': (context) => const WelcomeScreen(role: '',),
+            '/role-selection': (context) => const RoleSelectionScreen(),
             '/doctor/home': (context) => const DoctorHomeScreen(),
             '/notifications': (context) => const NotificationsScreen(),
             '/doctor/messages': (context) => const DoctorMessagesScreen(),
