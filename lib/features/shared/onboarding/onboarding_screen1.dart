@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:sheydoc_app/features/shared/onboarding/role_selection_screen.dart';
 
 
 import '../../../core/constants/app_colors.dart';
@@ -97,7 +98,7 @@ class OnboardingScreen1 extends StatelessWidget {
                         width: double.infinity,
                         text: "skip",
                         onPressed: () {
-                          Navigator.push(context, MaterialPageRoute(builder: (context)=>OnboardingScreen2()));
+                          Navigator.push(context, MaterialPageRoute(builder: (context)=>RoleSelectionScreen()));
                         },
                         isFilled: false,
                         radius: 8.r,

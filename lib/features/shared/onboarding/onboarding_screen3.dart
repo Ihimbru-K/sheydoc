@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:sheydoc_app/features/shared/onboarding/role_selection_screen.dart';
 
 import 'onboarding_screen4.dart';
 
@@ -155,7 +156,12 @@ class OnboardingScreen3 extends StatelessWidget {
 
                   // Skip button
                   TextButton(
-                    onPressed: () {},
+                    onPressed: () {
+
+
+                        Navigator.push(context, MaterialPageRoute(builder: (context)=>RoleSelectionScreen()));
+
+                    },
                     child: Text(
                       "Skip",
                       style: TextStyle(
