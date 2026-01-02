@@ -5,6 +5,8 @@ import 'package:firebase_core/firebase_core.dart';
 import 'package:sheydoc_app/features/shared/onboarding/role_selection_screen.dart';
 
 // Import screens
+import 'features/admin/dashboard/admin_dashboard_screen.dart';
+import 'features/auth/admin_login_screen.dart';
 import 'features/auth/patients/messages/patient_messages_screen.dart';
 import 'features/doctor/home/home_screen.dart';
 import 'features/doctor/home/notification_screen.dart';
@@ -44,6 +46,9 @@ class MyApp extends StatelessWidget {
           // Named routes
           routes: {
             // '/welcome': (context) => const WelcomeScreen(role: '',),
+            // Add this route
+            '/admin-login': (context) => const AdminLoginScreen(),
+            '/admin-dashboard': (context) => const AdminDashboardScreen(),
             '/role-selection': (context) => const RoleSelectionScreen(),
             '/doctor/home': (context) => const DoctorHomeScreen(),
             '/notifications': (context) => const NotificationsScreen(),
