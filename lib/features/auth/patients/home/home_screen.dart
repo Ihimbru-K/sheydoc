@@ -553,7 +553,7 @@ class _PatientHomeScreenState extends State<PatientHomeScreen> {
                             ),
                             _buildFeelingButton(
                               icon: Icons.spa,
-                              label: 'Relax',
+                              label: 'Relaxed',
                               color: AppColors.primaryBlue,
                             ),
                             _buildFeelingButton(

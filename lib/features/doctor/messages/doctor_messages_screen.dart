@@ -15,6 +15,7 @@ class DoctorMessagesScreen extends StatelessWidget {
     return Scaffold(
       backgroundColor: Colors.grey[50],
       appBar: AppBar(
+        centerTitle: true,
         title: const Text(
           'Messages',
           style: TextStyle(color: Colors.black, fontWeight: FontWeight.w600),

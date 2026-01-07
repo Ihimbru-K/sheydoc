@@ -1,9 +1,15 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android">
 
+    <!-- Required permissions -->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
+
     <application
         android:label="sheydoc_app"
         android:name="${applicationName}"
         android:icon="@mipmap/ic_launcher">
+
         <activity
             android:name=".MainActivity"
             android:exported="true"
@@ -13,34 +19,137 @@
             android:configChanges="orientation|keyboardHidden|keyboard|screenSize|smallestScreenSize|locale|layoutDirection|fontScale|screenLayout|density|uiMode"
             android:hardwareAccelerated="true"
             android:windowSoftInputMode="adjustResize">
-            <!-- Specifies an Android theme to apply to this Activity as soon as
-                 the Android process has started. This theme is visible to the user
-                 while the Flutter UI initializes. After that, this theme continues
-                 to determine the Window background behind the Flutter UI. -->
+
             <meta-data
-              android:name="io.flutter.embedding.android.NormalTheme"
-              android:resource="@style/NormalTheme"
-              />
+                android:name="io.flutter.embedding.android.NormalTheme"
+                android:resource="@style/NormalTheme" />
+
             <intent-filter>
-                <action android:name="android.intent.action.MAIN"/>
-                <category android:name="android.intent.category.LAUNCHER"/>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <!-- Don't delete the meta-data below.
-             This is used by the Flutter tool to generate GeneratedPluginRegistrant.java -->
+
         <meta-data
             android:name="flutterEmbedding"
             android:value="2" />
     </application>
-    <!-- Required to query activities that can process text, see:
-         https://developer.android.com/training/package-visibility and
-         https://developer.android.com/reference/android/content/Intent#ACTION_PROCESS_TEXT.
 
-         In particular, this is used by the Flutter engine in io.flutter.plugin.text.ProcessTextPlugin. -->
     <queries>
         <intent>
-            <action android:name="android.intent.action.PROCESS_TEXT"/>
-            <data android:mimeType="text/plain"/>
+            <action android:name="android.intent.action.PROCESS_TEXT" />
+            <data android:mimeType="text/plain" />
         </intent>
     </queries>
+
 </manifest>
+
+
+
+
+    <!--<manifest xmlns:android="http://schemas.android.com/apk/res/android"-->
+<!--    package="com.yourcompany.sheydoc_app">-->
+
+<!--    &lt;!&ndash; 🔐 Required permissions &ndash;&gt;-->
+<!--    <uses-permission android:name="android.permission.INTERNET" />-->
+<!--    <uses-permission android:name="android.permission.RECORD_AUDIO" />-->
+<!--    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />-->
+
+<!--    <application-->
+<!--        android:label="sheydoc_app"-->
+<!--        android:name="${applicationName}"-->
+<!--        android:icon="@mipmap/ic_launcher">-->
+
+<!--        <activity-->
+<!--            android:name=".MainActivity"-->
+<!--            android:exported="true"-->
+<!--            android:launchMode="singleTop"-->
+<!--            android:taskAffinity=""-->
+<!--            android:theme="@style/LaunchTheme"-->
+<!--            android:configChanges="orientation|keyboardHidden|keyboard|screenSize|smallestScreenSize|locale|layoutDirection|fontScale|screenLayout|density|uiMode"-->
+<!--            android:hardwareAccelerated="true"-->
+<!--            android:windowSoftInputMode="adjustResize">-->
+
+<!--            <meta-data-->
+<!--                android:name="io.flutter.embedding.android.NormalTheme"-->
+<!--                android:resource="@style/NormalTheme" />-->
+
+<!--            <intent-filter>-->
+<!--                <action android:name="android.intent.action.MAIN" />-->
+<!--                <category android:name="android.intent.category.LAUNCHER" />-->
+<!--            </intent-filter>-->
+<!--        </activity>-->
+
+<!--        &lt;!&ndash; Flutter embedding &ndash;&gt;-->
+<!--        <meta-data-->
+<!--            android:name="flutterEmbedding"-->
+<!--            android:value="2" />-->
+<!--    </application>-->
+
+<!--    &lt;!&ndash; Required for text processing plugins &ndash;&gt;-->
+<!--    <queries>-->
+<!--        <intent>-->
+<!--            <action android:name="android.intent.action.PROCESS_TEXT" />-->
+<!--            <data android:mimeType="text/plain" />-->
+<!--        </intent>-->
+<!--    </queries>-->
+
+<!--</manifest>-->
+
+
+
+
+
+
+
+
+
+
+
+
+<!--    &lt;!&ndash;<manifest xmlns:android="http://schemas.android.com/apk/res/android">&ndash;&gt;-->
+
+<!--&lt;!&ndash;    <application&ndash;&gt;-->
+<!--&lt;!&ndash;        android:label="sheydoc_app"&ndash;&gt;-->
+<!--&lt;!&ndash;        android:name="${applicationName}"&ndash;&gt;-->
+<!--&lt;!&ndash;        android:icon="@mipmap/ic_launcher">&ndash;&gt;-->
+<!--&lt;!&ndash;        <activity&ndash;&gt;-->
+<!--&lt;!&ndash;            android:name=".MainActivity"&ndash;&gt;-->
+<!--&lt;!&ndash;            android:exported="true"&ndash;&gt;-->
+<!--&lt;!&ndash;            android:launchMode="singleTop"&ndash;&gt;-->
+<!--&lt;!&ndash;            android:taskAffinity=""&ndash;&gt;-->
+<!--&lt;!&ndash;            android:theme="@style/LaunchTheme"&ndash;&gt;-->
+<!--&lt;!&ndash;            android:configChanges="orientation|keyboardHidden|keyboard|screenSize|smallestScreenSize|locale|layoutDirection|fontScale|screenLayout|density|uiMode"&ndash;&gt;-->
+<!--&lt;!&ndash;            android:hardwareAccelerated="true"&ndash;&gt;-->
+<!--&lt;!&ndash;            android:windowSoftInputMode="adjustResize">&ndash;&gt;-->
+<!--&lt;!&ndash;            &lt;!&ndash; Specifies an Android theme to apply to this Activity as soon as&ndash;&gt;-->
+<!--&lt;!&ndash;                 the Android process has started. This theme is visible to the user&ndash;&gt;-->
+<!--&lt;!&ndash;                 while the Flutter UI initializes. After that, this theme continues&ndash;&gt;-->
+<!--&lt;!&ndash;                 to determine the Window background behind the Flutter UI. &ndash;&gt;&ndash;&gt;-->
+<!--&lt;!&ndash;            <meta-data&ndash;&gt;-->
+<!--&lt;!&ndash;              android:name="io.flutter.embedding.android.NormalTheme"&ndash;&gt;-->
+<!--&lt;!&ndash;              android:resource="@style/NormalTheme"&ndash;&gt;-->
+<!--&lt;!&ndash;              />&ndash;&gt;-->
+<!--&lt;!&ndash;            <intent-filter>&ndash;&gt;-->
+<!--&lt;!&ndash;                <action android:name="android.intent.action.MAIN"/>&ndash;&gt;-->
+<!--&lt;!&ndash;                <category android:name="android.intent.category.LAUNCHER"/>&ndash;&gt;-->
+<!--&lt;!&ndash;            </intent-filter>&ndash;&gt;-->
+<!--&lt;!&ndash;        </activity>&ndash;&gt;-->
+<!--&lt;!&ndash;        &lt;!&ndash; Don't delete the meta-data below.&ndash;&gt;-->
+<!--&lt;!&ndash;             This is used by the Flutter tool to generate GeneratedPluginRegistrant.java &ndash;&gt;&ndash;&gt;-->
+<!--&lt;!&ndash;        <meta-data&ndash;&gt;-->
+<!--&lt;!&ndash;            android:name="flutterEmbedding"&ndash;&gt;-->
+<!--&lt;!&ndash;            android:value="2" />&ndash;&gt;-->
+<!--&lt;!&ndash;    </application>&ndash;&gt;-->
+<!--&lt;!&ndash;    &lt;!&ndash; Required to query activities that can process text, see:&ndash;&gt;-->
+<!--&lt;!&ndash;         https://developer.android.com/training/package-visibility and&ndash;&gt;-->
+<!--&lt;!&ndash;         https://developer.android.com/reference/android/content/Intent#ACTION_PROCESS_TEXT.&ndash;&gt;-->
+
+<!--&lt;!&ndash;         In particular, this is used by the Flutter engine in io.flutter.plugin.text.ProcessTextPlugin. &ndash;&gt;&ndash;&gt;-->
+<!--&lt;!&ndash;    <queries>&ndash;&gt;-->
+<!--&lt;!&ndash;        <intent>&ndash;&gt;-->
+<!--&lt;!&ndash;            <action android:name="android.intent.action.PROCESS_TEXT"/>&ndash;&gt;-->
+<!--&lt;!&ndash;            <data android:mimeType="text/plain"/>&ndash;&gt;-->
+<!--&lt;!&ndash;        </intent>&ndash;&gt;-->
+<!--&lt;!&ndash;    </queries>&ndash;&gt;-->
+<!--&lt;!&ndash;</manifest>&ndash;&gt;-->
