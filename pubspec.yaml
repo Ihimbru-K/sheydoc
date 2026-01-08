@@ -28,7 +28,7 @@ dependencies:
   timeago: ^3.7.1
   intl: ^0.20.2
   flutter_image_compress: ^2.4.0
-  flutter_webrtc: ^1.2.1
+  flutter_webrtc: ^1.2.1git
 
 dev_dependencies:
   flutter_test:
