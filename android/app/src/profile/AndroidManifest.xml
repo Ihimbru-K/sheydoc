@@ -8,25 +8,85 @@
 
 
 
+<!--<manifest xmlns:android="http://schemas.android.com/apk/res/android">-->
+
+<!--    &lt;!&ndash; Required for Flutter hot reload and network requests &ndash;&gt;-->
+<!--    <uses-permission android:name="android.permission.INTERNET"/>-->
+
+<!--    &lt;!&ndash; Agora required permissions &ndash;&gt;-->
+<!--    <uses-permission android:name="android.permission.CAMERA" />-->
+<!--    <uses-permission android:name="android.permission.RECORD_AUDIO" />-->
+<!--    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />-->
+<!--    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />-->
+<!--    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />-->
+
+<!--    &lt;!&ndash; Bluetooth (Android 12+ requires CONNECT only) &ndash;&gt;-->
+<!--    <uses-permission android:name="android.permission.BLUETOOTH_CONNECT" />-->
+<!--    &lt;!&ndash; Older devices fallback (safe to keep, ignored on Android 12+) &ndash;&gt;-->
+<!--    <uses-permission android:name="android.permission.BLUETOOTH" />-->
+
+<!--    <application>-->
+<!--        &lt;!&ndash; Your app config here &ndash;&gt;-->
+<!--    </application>-->
+
+<!--</manifest>-->
+
+
+
 <manifest xmlns:android="http://schemas.android.com/apk/res/android">
 
-    <!-- Required for Flutter hot reload and network requests -->
-    <uses-permission android:name="android.permission.INTERNET"/>
-
-    <!-- Agora required permissions -->
-    <uses-permission android:name="android.permission.CAMERA" />
-    <uses-permission android:name="android.permission.RECORD_AUDIO" />
-    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
+    <!-- ===================== -->
+    <!-- Core permissions -->
+    <!-- ===================== -->
+    <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
     <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
 
-    <!-- Bluetooth (Android 12+ requires CONNECT only) -->
+    <!-- ===================== -->
+    <!-- Audio / Video (Agora, calls) -->
+    <!-- ===================== -->
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
+
+    <!-- ===================== -->
+    <!-- Bluetooth -->
+    <!-- ===================== -->
+    <!-- Android 12+ -->
     <uses-permission android:name="android.permission.BLUETOOTH_CONNECT" />
-    <!-- Older devices fallback (safe to keep, ignored on Android 12+) -->
+    <!-- Legacy (ignored on Android 12+) -->
     <uses-permission android:name="android.permission.BLUETOOTH" />
 
-    <application>
-        <!-- Your app config here -->
+    <!-- ===================== -->
+    <!-- Local Notifications -->
+    <!-- ===================== -->
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.USE_EXACT_ALARM" />
+    <uses-permission android:name="android.permission.SCHEDULE_EXACT_ALARM" />
+
+    <application
+        android:name="${applicationName}"
+        android:label="your_app_name"
+        android:icon="@mipmap/ic_launcher">
+
+        <!-- ===================== -->
+        <!-- Flutter Local Notifications -->
+        <!-- ===================== -->
+        <receiver
+            android:name="com.dexterous.flutterlocalnotifications.ScheduledNotificationReceiver"
+            android:exported="false" />
+
+        <receiver
+            android:name="com.dexterous.flutterlocalnotifications.ScheduledNotificationBootReceiver"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+            </intent-filter>
+        </receiver>
+
+        <!-- Your other activities / services here -->
+
     </application>
 
 </manifest>
